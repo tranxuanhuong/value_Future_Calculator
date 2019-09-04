@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $investment = $_POST["investment"];
     $YearlyInterestRate=$_POST["rate"];
     $numberOfYears=$_POST["years"];
-    $result=($investment+($investment*$YearlyInterestRate))*$numberOfYears;
+    $result=$investment+($investment*$YearlyInterestRate*0.01)*$numberOfYears;
 
     echo $result;
 
